@@ -1,0 +1,155 @@
+@media (min-width: 420px) {
+  .cover-section {
+    padding: 3rem 2rem;
+  }
+
+  .cover-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cover-section {
+    padding: 4rem 3rem;
+    min-height: calc(100vh - 2rem);
+  }
+
+  .cover-content {
+    align-items: stretch;
+  }
+
+  .cover-image {
+    min-height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cover-section {
+    padding: 5rem 4rem;
+  }
+
+  .glass-card {
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 620px) {
+  .hero-section {
+    grid-template-columns: 320px 1fr;
+    align-items: center;
+  }
+
+  .hero-avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .event-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-section {
+    padding: 3rem 2rem;
+  }
+
+  .countdown-card {
+    min-height: 180px;
+  }
+
+  .event-section {
+    padding: 4rem 2rem 6rem;
+  }
+
+  .music-player {
+    right: 2rem;
+    bottom: 2rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .gift-card {
+    grid-template-columns: 1fr 1.4fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .gift-card {
+    max-width: 740px;
+  }
+
+  .celebrate-button {
+    width: 280px;
+  }
+
+  .decor-ribbon {
+    width: 220px;
+  }
+}
+
+@media (min-width: 620px) {
+  .wishes-form {
+    padding: 2.5rem;
+  }
+
+  .rsvp-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .share-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .wishes-section {
+    padding: 5rem 2rem 3rem;
+  }
+
+  .wishes-form {
+    padding: 3rem;
+  }
+
+  .guestbook-section {
+    padding: 4rem 2rem 5rem;
+  }
+
+  .rsvp-section {
+    padding: 5rem 2rem;
+  }
+
+  .rsvp-options {
+    gap: 1.5rem;
+  }
+
+  .rsvp-summary-section {
+    padding: 4rem 2rem 5rem;
+  }
+
+  .summary-grid {
+    gap: 1.5rem;
+  }
+
+  .share-section {
+    padding: 4rem 2rem 5rem;
+  }
+
+  .counter-section {
+    padding: 3rem 2rem 7rem;
+  }
+}

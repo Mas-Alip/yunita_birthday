@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BirthdayBloom | Invitation</title>
+  <meta name="description" content="Elegant birthday invitation with a modern mobile-first design." />
+  <meta name="theme-color" content="#fce4ec" />
+  <meta name="msapplication-TileColor" content="#fce4ec" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BirthdayBloom | Yunita's Birthday Invitation" />
+  <meta property="og:description" content="Join Yunita's premium birthday invitation with RSVP, wishes, countdown, and celebration." />
+  <meta property="og:site_name" content="BirthdayBloom" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="BirthdayBloom | Yunita's Birthday Invitation" />
+  <meta property="twitter:description" content="Celebrate Yunita's birthday with an elegant invitation experience complete with RSVP and live wishes." />
+  <meta property="twitter:creator" content="@YourTwitterHandle" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="gift-box">
+      <span class="gift-lid"></span>
+      <span class="gift-base"></span>
+    </div>
+    <p class="loader-text">Preparing your celebration...</p>
+  </div>
+
+  <main class="page-shell">
+    <noscript class="noscript-alert">JavaScript is required for RSVP, wishes, and celebration interactions. Please enable JavaScript and refresh the page.</noscript>
+    <!-- Cover Section -->
+    <section class="cover-section" aria-label="Birthday invitation cover">
+      <div class="balloon-group" aria-hidden="true">
+        <div class="balloon balloon-1"></div>
+        <div class="balloon balloon-2"></div>
+        <div class="balloon balloon-3"></div>
+      </div>
+
+      <div class="cover-content glass-card reveal fade-up">
+        <div class="cover-image" aria-hidden="true">
+          <span style="background-image: url('assets/images/Image_1.jpeg')";></span>
+        </div>
+        <div class="cover-copy">
+          <p class="eyebrow">You are cordially invited</p>
+          <h1>BirthdayBloom</h1>
+          <p class="greeting">Dear, <span id="guest-name">Guest</span></p>
+          <p class="intro">Join us for an intimate celebration filled with joy, elegance, and soft pink magic.</p>
+          <button class="open-button reveal fade-up" id="open-invitation" type="button">Open Invitation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section glass-card reveal fade-up" id="hero" aria-label="Birthday hero">
+      <div class="hero-profile reveal fade-right">
+        <div class="hero-avatar" aria-hidden="true">
+          <span>YPS</span>
+        </div>
+      </div>
+      <div class="hero-copy reveal fade-left">
+        <p class="hero-greeting greeting reveal fade-in" id="hero-guest-name">Dear Guest 🌸</p>
+        <p class="hero-subtitle">We are delighted to celebrate this special day with you.</p>
+        <div class="welcome-card reveal fade-up" id="hero-welcome-card">
+          Hello Guest, thank you for taking the time to visit this invitation.
+        </div>
+        <p class="eyebrow">Happy Birthday</p>
+        <h2>Yunita Permata Sari</h2>
+        <p class="hero-age">Turning 18</p>
+        <blockquote class="hero-quote">“Another year older, another year brighter.”</blockquote>
+      </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section" id="countdown-section" aria-labelledby="countdown-heading">
+      <div class="section-heading glass-card reveal fade-up">
+        <p class="eyebrow">Countdown</p>
+        <h2 id="countdown-heading">Party begins soon</h2>
+      </div>
+      <div class="countdown-grid">
+        <div class="countdown-card glass-card reveal fade-up">
+          <p class="countdown-label">Days</p>
+          <p class="countdown-value" id="countdown-days">00</p>
+        </div>
+        <div class="countdown-card glass-card reveal fade-up">
+          <p class="countdown-label">Hours</p>
+          <p class="countdown-value" id="countdown-hours">00</p>
+        </div>
+        <div class="countdown-card glass-card reveal fade-up">
+          <p class="countdown-label">Minutes</p>
+          <p class="countdown-value" id="countdown-minutes">00</p>
+        </div>
+        <div class="countdown-card glass-card reveal fade-up">
+          <p class="countdown-label">Seconds</p>
+          <p class="countdown-value" id="countdown-seconds">00</p>
+        </div>
+      </div>
+      <p class="countdown-message" id="countdown-message" aria-live="polite"></p>
+    </section>
+
+    <!-- Event Details -->
+    <section class="event-section" id="event-details" aria-label="Event details">
+      <div class="event-grid">
+        <article class="event-card reveal fade-up">
+          <div class="event-icon" aria-hidden="true">📅</div>
+          <h3>Date</h3>
+          <p>Saturday, June 27, 2026</p>
+        </article>
+        <article class="event-card reveal fade-up">
+          <div class="event-icon" aria-hidden="true">⏰</div>
+          <h3>Time</h3>
+          <p>18:00 WIB</p>
+        </article>
+        <article class="event-card reveal fade-up">
+          <div class="event-icon" aria-hidden="true">📍</div>
+          <h3>Location</h3>
+          <p>Pemalang, Central Java</p>
+        </article>
+      </div>
+      
+      <div class="dresscode-section glass-card reveal fade-up" aria-labelledby="dress-code-heading">
+        <p class="eyebrow">Dress Code</p>
+        <h3 id="dress-code-heading">Please wear</h3>
+        <ul class="dresscode-list">
+          <li>Men's Dresscode : White Top, Blue Denim Bottom</li>
+          <li>Women's Dresscode : Baby Blue Top, White Bottom</li>
+        </ul>
+      
+      </div>
+      <div class="maps-cta reveal fade-up">
+        <a class="maps-button" href="https://maps.app.goo.gl/1JGLHZkWvo6Latwi9?g_st=aw" target="_blank" rel="noopener" aria-label="Open location in Google Maps">Open Location</a>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery" aria-label="Gallery memories">
+    <div class="section-heading glass-card reveal scale-in">
+      <p class="eyebrow">Making Memories Together</p>
+      <h2>Making Memories Together</h2>
+    </div>
+    <div class="gallery-grid">
+      <button class="gallery-item reveal fade-up" data-image="image1" aria-label="Open gallery image 1" style="background-image: url('assets/images/Image_1.jpeg');"></button>
+      <button class="gallery-item reveal fade-up" data-image="image2" aria-label="Open gallery image 2" style="background-image: url('assets/images/Image_2.jpeg');"></button>
+      <button class="gallery-item reveal fade-up" data-image="image3" aria-label="Open gallery image 3" style="background-image: url('assets/images/Image_3.jpeg');"></button>
+      <button class="gallery-item reveal fade-up" data-image="image4" aria-label="Open gallery image 4" style="background-image: url('assets/images/Image_4.jpeg');"></button>
+      <button class="gallery-item reveal fade-up" data-image="image5" aria-label="Open gallery image 5" style="background-image: url('assets/images/Image_5.jpeg');"></button>
+      <button class="gallery-item reveal fade-up" data-image="image6" aria-label="Open gallery image 6" style="background-image: url('assets/images/Image_6.jpeg');"></button>
+    </div>
+  </section>
+
+  <div class="lightbox-overlay" id="gallery-lightbox" aria-hidden="true">
+    <div class="lightbox-content glass-card" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close gallery image">×</button>
+      <div class="lightbox-image" id="lightbox-image">
+        <img id="lightbox-img" src="" alt="Gallery image preview" />
+      </div>
+      <p id="lightbox-title" class="visually-hidden">Gallery Image</p>
+    </div>
+  </div>
+
+  <div class="balloon-backdrop" aria-hidden="true">
+    <span class="balloon-sm balloon-pink"></span>
+    <span class="balloon-sm balloon-white"></span>
+    <span class="balloon-md balloon-rose"></span>
+    <span class="balloon-lg balloon-pink"></span>
+    <span class="balloon-sm balloon-rose"></span>
+  </div>
+
+  <section class="gift-section" id="gift-section" aria-label="Send your love">
+    <div class="section-heading glass-card reveal fade-up">
+      <p class="eyebrow">Send Your Love</p>
+      <h2>Send Your Love</h2>
+    </div>
+    <!-- <button class="gift-card glass-card reveal fade-up" id="gift-card" type="button" aria-label="Open gift modal">
+      <div class="gift-card-icon" aria-hidden="true">🎁</div>
+      <div>
+        <h3>Gift Box</h3>
+        <p>Tap to send a warm wish with a gift.</p>
+      </div>
+    </button> -->
+  </section>
+
+  <!-- <div class="modal-overlay" id="gift-modal" aria-hidden="true">
+    <div class="gift-modal glass-card reveal scale-in" role="dialog" aria-modal="true" aria-labelledby="gift-modal-title">
+      <button class="modal-close" id="gift-modal-close" type="button" aria-label="Close gift modal">×</button>
+      <h2 id="gift-modal-title">Send a Gift</h2>
+      <div class="gift-modal-body">
+        <div class="qr-placeholder" aria-hidden="true">QR</div>
+        <div class="gift-details">
+          <p><strong>Bank:</strong> BCA</p>
+          <p><strong>Account:</strong> 1234567890</p>
+          <p><strong>E-Wallet:</strong> Dana</p>
+          <p><strong>Number:</strong> 08123456789</p>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="copy-button" id="copy-account" type="button">Copy Account</button>
+        <button class="close-button" id="close-modal" type="button">Close</button>
+      </div>
+    </div>
+  </div> -->
+
+  <section class="celebrate-section" aria-label="Celebrate button">
+    <button class="celebrate-button reveal fade-up" id="celebrate-button" type="button">Celebrate 🎉</button>
+  </section>
+
+  <!-- Phase 4: Wishes & RSVP -->
+
+  <!-- Wishes Form Section -->
+  <section class="wishes-section" id="wishes-section" aria-label="Leave your wishes">
+    <div class="section-heading glass-card reveal fade-up">
+      <p class="eyebrow">Make a Wish</p>
+      <h2>Leave Your Wishes</h2>
+    </div>
+    <div class="wishes-container">
+      <form class="wishes-form glass-card reveal fade-up" id="wishes-form" aria-label="Wish form">
+        <div class="form-group">
+          <label for="wish-name">Your Name</label>
+          <input type="text" id="wish-name" name="name" placeholder="Enter your name" maxlength="50" required />
+        </div>
+        <div class="form-group">
+          <label for="wish-message">Your Message</label>
+          <textarea id="wish-message" name="message" placeholder="Share your wishes..." maxlength="280" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="wish-submit-btn" aria-label="Send wish">Send Wish</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Guest Book Section -->
+  <section class="guestbook-section" id="guestbook-section" aria-label="Guest book wishes">
+    <div class="section-heading glass-card reveal fade-up">
+      <p class="eyebrow">Wishes & Love</p>
+      <h2>Guest Book</h2>
+    </div>
+    <div class="guestbook-list" id="guestbook-list">
+      <p class="empty-state">Loading wishes...</p>
+    </div>
+  </section>
+
+  <!-- RSVP Section -->
+  <section class="rsvp-section" id="rsvp-section" aria-label="RSVP to the event">
+    <div class="section-heading glass-card reveal fade-up">
+      <p class="eyebrow">Confirm Attendance</p>
+      <h2>Will You Attend?</h2>
+    </div>
+    <div class="rsvp-options reveal fade-up">
+      <button class="rsvp-option" id="rsvp-yes" data-status="going" type="button">
+        <span class="rsvp-icon">✓</span>
+        <span>Yes, I'll be there</span>
+      </button>
+      <button class="rsvp-option" id="rsvp-maybe" data-status="maybe" type="button">
+        <span class="rsvp-icon">?</span>
+        <span>Maybe</span>
+      </button>
+      <button class="rsvp-option" id="rsvp-no" data-status="declined" type="button">
+        <span class="rsvp-icon">✕</span>
+        <span>Sorry, can't attend</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- RSVP Summary Section -->
+  <section class="rsvp-summary-section" id="rsvp-summary-section" aria-label="RSVP statistics">
+    <div class="summary-grid">
+      <article class="summary-card glass-card reveal fade-up">
+        <p class="summary-label">Going</p>
+        <p class="summary-count" id="count-going">0</p>
+      </article>
+      <article class="summary-card glass-card reveal fade-up">
+        <p class="summary-label">Maybe</p>
+        <p class="summary-count" id="count-maybe">0</p>
+      </article>
+      <article class="summary-card glass-card reveal fade-up">
+        <p class="summary-label">Declined</p>
+        <p class="summary-count" id="count-declined">0</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Share & Copy Link Section -->
+  <section class="share-section" id="share-section" aria-label="Share invitation">
+    <div class="share-actions reveal fade-up">
+      <button class="share-button" id="share-button" type="button" aria-label="Share invitation">
+        <span>📤 Share Invitation</span>
+      </button>
+      <button class="copy-link-button" id="copy-link-button" type="button" aria-label="Copy invitation link">
+        <span>🔗 Copy Link</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Visitor Counter Section -->
+  <section class="counter-section" id="counter-section" aria-label="Visitor count">
+    <div class="counter-box glass-card reveal fade-up">
+      <p class="counter-label">Total Visitors</p>
+      <p class="counter-value" id="visitor-counter">0</p>
+    </div>
+  </section>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast-notification" role="status" aria-live="polite" aria-hidden="true"></div>
+
+  <div class="decorations" aria-hidden="true">
+    <span class="decor decor-flower"></span>
+    <span class="decor decor-sparkle"></span>
+    <span class="decor decor-ribbon"></span>
+  </div>
+
+  <button class="music-player" id="music-player" type="button" aria-label="Play birthday music">
+    <span class="music-icon" aria-hidden="true">▶</span>
+  </button>
+  <audio id="birthday-audio" preload="none" src="../birthday-bloom/assets/music/Kiss Me (320).mp3"></audio>
+
+  <script src="js/guest.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

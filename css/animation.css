@@ -1,0 +1,127 @@
+/* Floating balloon animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-16px) translateX(6px);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-24px) translateX(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-48px) translateX(0);
+    opacity: 0.82;
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  will-change: opacity, transform;
+}
+
+.fade-up.is-visible {
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.25s;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  will-change: opacity, transform;
+}
+
+.fade-left.is-visible {
+  animation: fadeLeft 0.9s ease forwards;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(28px);
+  will-change: opacity, transform;
+}
+
+.fade-right.is-visible {
+  animation: fadeRight 0.9s ease forwards;
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.94);
+  will-change: opacity, transform;
+}
+
+.scale-in.is-visible {
+  animation: scaleIn 0.9s ease forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  will-change: opacity, transform;
+}
+
+.fade-in.is-visible {
+  animation: fadeInUp 0.9s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loaderFade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
