@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const countDeclined = document.getElementById('count-declined');
   const toast = document.getElementById('toast-notification');
   const EVENT_DATE = new Date('2026-06-25T12:00:00Z');
-  const EVENT_LABEL = 'June 25, 2026 · 18:00 WIB';
+  const EVENT_LABEL = 'June 27, 2026 · 18:00 WIB';
 
   let scrollPosition = 0;
   let currentRSVPStatus = localStorage.getItem('birthday-rsvp-status');
