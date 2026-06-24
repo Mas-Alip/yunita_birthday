@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const countMaybe = document.getElementById('count-maybe');
   const countDeclined = document.getElementById('count-declined');
   const toast = document.getElementById('toast-notification');
-  const EVENT_DATE = new Date('2026-06-25T12:00:00Z');
+  const EVENT_DATE = new Date('2026-06-27T12:00:00Z');
   const EVENT_LABEL = 'June 27, 2026 · 18:00 WIB';
 
   let scrollPosition = 0;
